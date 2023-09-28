@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Title: To-Do List App
 
-## Getting Started
+### Overview
+This project is a simple To-Do List web application built using React. It allows users to add, view, and manage their tasks. The application features a user-friendly interface, with the ability to categorize tasks by color.
 
-First, run the development server:
+### Technologies Used
+- React: A popular JavaScript library for building user interfaces.
+- React Bootstrap: A library that provides Bootstrap components as React components.
+- Cookies (js-cookie): Used for storing and retrieving task data in browser cookies.
+- JSON: Data is stored and managed in JSON format.
+- Next.js: The project structure suggests the use of Next.js for server-side rendering and routing (though it's not explicitly mentioned in the code).
 
+### Features
+1. **Task Management**: Users can add new tasks with a title, description, and color category.
+2. **Color Categorization**: Tasks can be categorized into different color groups, such as Primary, Success, Danger, Warning, Info, and Light.
+3. **Persistent Storage**: Task data is stored in browser cookies, allowing users to access their tasks even after closing and reopening the application.
+4. **Responsive Design**: The application is designed to be responsive, adapting to different screen sizes.
+
+### Code Structure
+- **index.tsx**: The main entry point of the application, which displays the list of tasks and handles the addition of new tasks.
+- **addModal.tsx**: A modal component used for adding new tasks. It includes form inputs for task title, description, and color category.
+- **sidebar.tsx**: A simple sidebar component displaying the application title.
+
+### How to Run
+To run this project, follow these steps:
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+### Usage
+- To add a new task, click on the "+" button on the main page. Fill in the task details, select a color category, and click the "Add" button.
+- To view existing tasks, they will be displayed on the main page, categorized by their color.
+- Task data is automatically saved in browser cookies and will persist between sessions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Future Improvements
+Some possible future improvements for this project include:
+- User authentication to save and retrieve individual task lists.
+- Task editing and deletion functionality.
+- Task prioritization or due dates.
+- Improved data management, such as using a backend server or database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Feel free to fork and modify this project to add more features and customize it to your needs!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
