@@ -34,10 +34,11 @@ npm run dev
 
 ### Future Improvements
 Some possible future improvements for this project include:
-- User authentication to save and retrieve individual task lists.
 - Task editing and deletion functionality.
 - Task prioritization or due dates.
-- Improved data management, such as using a backend server or database.
+
+### App Image
+
+![App Image](https://github.com/KiaNu-ReeVes/react-todoapp/blob/main/AppImage/image.png?raw=true)
 
 Feel free to fork and modify this project to add more features and customize it to your needs!
-
